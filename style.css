@@ -1,0 +1,208 @@
+/* **************************  Styling The General HTML Document START HERE **************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+
+    height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* **************************  Styling The General HTML Document END HERE **************************** */
+
+/* ************************** Styling The Header START HERE ********************************** */
+header {
+    height: 5vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: gold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul li {
+    display: inline-block;
+}
+h2 {
+    margin-left: 20px;
+}
+li {
+    margin-right: 20px;
+    position: relative;
+}
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #f09;
+    transition: .2s;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+/* ************************** Styling The Header END HERE ********************************** */
+
+
+/* ************************** Styling The Main Section START HERE ********************************** */
+
+main {
+    height: 95vh;
+    background-color: #333;
+}
+
+/* ******************* Styling Home Main START HERE ******************* */
+.ihome {
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image {
+    border: 2px solid #f09;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.image:hover {
+    box-shadow: 0 0 5px 2px #f09;
+}
+.ihome p {
+    font-size: 32px;
+    height: 200px;
+}
+p span {
+    color: #f09;
+    text-shadow: 0 0 4px #f09;
+}
+/* ******************* Styling Home Main END HERE ******************* */
+
+
+/* ******************* Styling Images Main START HERE ******************* */
+
+.iimages {
+    padding-top: 30px;
+}
+.title {
+    color: white;
+    margin-bottom: 50px;
+
+    border: 2px solid greenyellow;
+    padding: 5px;
+    width: fit-content;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 5px 2px greenyellow;
+    background-color: #444;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.photo {
+    height: 250px;
+    width: 200px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+
+.photo:hover {
+    box-shadow: 0 0 5px 2px greenyellow;
+}
+
+/* ******************* Styling Images Main END HERE ******************* */
+
+
+/* ******************* Styling Videos Main START HERE ******************* */
+
+
+.ivideos {
+    padding-top: 30px;
+}
+
+.vcontainer {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+video {
+    height: 250px;
+    width: 200px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+
+
+
+/* ******************* Styling Videos Main END HERE ******************* */
+
+
+
+/* ************************** Styling The Main Section END HERE ********************************** */
+
+
+
+
+/* Styling Footer START HERE */
+
+footer {
+    height: 25vh;
+    background-color: rgba(127, 255, 212, 0.568);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 2.5vh;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.116);
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card li, .card h3 {
+    margin: 4px;
+    color: #000;
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Styling Footer END HERE */
